@@ -1,0 +1,52 @@
+home:
+  title: "Sec4US's cheatsheets"
+  tagline: |
+    Hey! We're <a href='https://sec4us.com.br/'>Sec4US</a> and this is our cheatsheets repository.
+
+top_nav:
+  title: Sec4US cheatsheets
+  edit: Edit
+  edit_on_github: Edit this page on GitHub
+
+sheet:
+  suffix: cheatsheet
+
+social_list:
+  default_description: "Sec4US cheatsheets"
+  description: "Sec4US cheatsheets for TITLE."
+  facebook_share: Share on Facebook
+  twitter_share: Share on Twitter
+
+related_posts_callout:
+  description: Over SIZE curated cheatsheets, by Sec4US.
+  link: Sec4US cheatsheets home
+
+related_posts_group:
+  top: Top cheatsheets
+  other: Other cheatsheets
+  category: Other CATEGORY cheatsheets
+
+search_form:
+  default_placeholder: Search SIZE+ cheatsheets
+  home_placeholder: Search...
+  prefix: Sec4US
+
+comments_area:
+  suffix: for this cheatsheet.
+  link: "Write yours!"
+
+not_found:
+  title: Not found
+  description: Sorry, we don't have a cheatsheet for this yet. Try searching!
+  home: Back to home
+
+announcement:
+  id: sec4UD
+  title: |
+    New: Training!
+  body: |
+    PT: Veja nossa listagem completa de treinamentos!
+
+    En: Check our complete training list!
+
+    [![](https://sec4us.com.br/wp-content/uploads/2019/01/SEC4US_logo_borda-300x90.png)](https://sec4us.com.br/treinamentos/)
