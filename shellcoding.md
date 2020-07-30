@@ -521,3 +521,5 @@ _start:
 {: .-one-column}
 
 * [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html) _(software.intel.com)_
+* [Free Training Shellcoding for 64 bits - Brazilian Language](https://www.youtube.com/watch?v=ySKEF8MHcZA) _(YouTube)_
+
