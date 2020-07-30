@@ -24,6 +24,7 @@ This is a quick reference to getting started with Shellcoding.
 
 - [Shellcoding Training](https://sec4us.com.br/shellcoding-for-exploitation-pres/) _(learn from scratch show to create your own shellcode)_
 - [Author page](https://www.helviojunior.com.br/) _(Hélvio Junior - M4v3r1ck)_
+- [LinkedIn](https://www.linkedin.com/in/helviojunior/) _(Hélvio Junior - LinkedIn)_
 - [PDF Version](http://s.sec4us.com.br/shellcoding_cheatseet.pdf) _(Hélvio Junior - M4v3r1ck)_
 
 ### Shellcode Tester
