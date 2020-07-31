@@ -1,6 +1,6 @@
 ---
 title: Traditional Buffer Overflow Windows
-category: CLI
+category: BufferOverflow
 layout: 2017/sheet
 tags: [Featured]
 updated: 2020-07-30

@@ -1,6 +1,6 @@
 ---
 title: Shellcoding creation
-category: CLI
+category: Shellcoding
 layout: 2017/sheet
 tags: [Featured]
 updated: 2020-07-30
