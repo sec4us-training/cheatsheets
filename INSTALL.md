@@ -27,7 +27,7 @@ Demonstro aqui como compilar e gerar os HTMLs estáticos dos Cheat Sheets.
 Execute o comando abaixo para gerar todo o conteúdo do site
 Este processo atualizará o /assets/packed/ e _includes/2017/critical/ com as fontes em _parcel/
 
-yarn dev
+yarn build
 ```
 
 ## Gere os arquivos HTML de produção
