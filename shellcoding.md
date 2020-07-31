@@ -108,7 +108,6 @@ Adding an breakpoint
 Adding conditional breakpoint
 ```bash
 (gdb) b main.c:260 if (resp_pool->first==0x4141414141414141)
-(gdb) b *0x01020304
 ```
 
 List previous breakpoints
