@@ -213,8 +213,9 @@ catch
 
 ### 2 - SEH Structure
 This structure ( also called a SEH record) is **8 bytes** and has 2 (4 byte) elements
-![SEH Structure](https://www.corelan.be/wp-content/uploads/2009/07/image45.png)
+![SEH Structure](https://s.sec4us.com.br/images/corelan_image45.png)
 
+Image Source: [corelan.be](https://www.corelan.be/index.php/2009/07/25/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-3-seh/)
 
 BUFFER OVERFLOW BYPASS SEH - STEP BY STEP 
 --------------------------------------------------
