@@ -22,10 +22,10 @@ Getting started
 
 This is a quick reference to getting started with Shellcoding.
 
-- [Shellcoding Training](https://sec4us.com.br/shellcoding-for-exploitation-pres/) _(learn from scratch show to create your own shellcode)_
-- [Author page](https://www.helviojunior.com.br/) _(Hélvio Junior - M4v3r1ck)_
-- [LinkedIn](https://www.linkedin.com/in/helviojunior/) _(Hélvio Junior - LinkedIn)_
-- [PDF Version](http://s.sec4us.com.br/shellcoding_cheatseet.pdf) _(Hélvio Junior - M4v3r1ck)_
+- [Shellcoding Training](https://sec4us.com.br/shellcoding-for-exploitation-pres/){:target="_blank"} _(learn from scratch show to create your own shellcode)_
+- [Author page](https://www.helviojunior.com.br/){:target="_blank"} _(Hélvio Junior - M4v3r1ck)_
+- [LinkedIn](https://www.linkedin.com/in/helviojunior/){:target="_blank"} _(Hélvio Junior - LinkedIn)_
+- [PDF Version](http://s.sec4us.com.br/shellcoding_cheatseet.pdf){:target="_blank"} _(Hélvio Junior - M4v3r1ck)_
 
 ### Shellcode Tester
 Installing
@@ -46,7 +46,7 @@ shellcodetester arquivo.asm --break-point
 ```
 
 For more information, windows version and releases see: 
-[Shellcode Tester](https://github.com/helviojunior/shellcodetester.git)
+[Shellcode Tester](https://github.com/helviojunior/shellcodetester.git){:target="_blank"} 
 
 
 GDB Commands
@@ -102,6 +102,12 @@ Passing data to stdin from external command
 Adding an breakpoint
 ```bash
 (gdb) b *main
+(gdb) b *0x01020304
+```
+
+Adding conditional breakpoint
+```bash
+(gdb) b main.c:260 if (resp_pool->first==0x4141414141414141)
 (gdb) b *0x01020304
 ```
 
@@ -182,10 +188,9 @@ Register is a small space used by CPU to store information.
 
 ### Registers - 32 bits
 
-| 32       | 16      |  8h  | 8l   |
-| -------- | ------- | ---- | ---- |
 | 32 bits  | 16 bits | 8 bits    | |
 |          |         | High | Low  |
+| -------- | ------- | ---- | ---- |
 | eax    | ax    | ah | al |
 | ecx    | ax    | ch | cl |
 | edx    | dx    | dh | dl |
@@ -197,10 +202,9 @@ Register is a small space used by CPU to store information.
 
 ### Registers - 64 bits
 
-| 64       | 32       | 16      |  8h  | 8l   |
-| -------- | -------- | ------- | ---- | ---- |
 | 64 bits  | 32 bits  | 16 bits | 8 bits    | |
 |          |          |         | High | Low  |
+| -------- | -------- | ------- | ---- | ---- |
 | eax / r0 | eax / r0d | ax / r0w | ah | al / r0b |
 | ecx / r1 | ecx / r1d | cx / r1w | ch | cl / r1b |
 | rdx / r2 | edx / r2d | dx / r2w | dh | dl / r2b |
@@ -248,7 +252,7 @@ Points to top of stack
 
 This table shows the main ASM instructions used to create shellcode
 
-| Register   | Description         |
+| Instruction   | Description         |
 | ---------- | ------------------- |
 | `INT3`     | Generate breakpoint trap           |
 | `CALL`     | Call a procedure           |
@@ -267,7 +271,7 @@ This table shows the main ASM instructions used to create shellcode
 | `XOR`      | Logical Exclusive OR           |
 
 
-See: [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)
+See: [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html){:target="_blank"}
 
 ### ASM Code sample for 32 bits
 This sample can be used to generate: Shellcode or ELF
@@ -458,7 +462,7 @@ Follows pseudo-function:
 eax = func1(ESP, ESP + 0x04, ESP + 0x08, ...)
 ```
 
-| Register          | Description         |
+| Stack Position          | Description         |
 | ----------------- | ------------------- |
 | `esp + 0x00`      | 1st parameter       |
 | `esp + 0x04`      | 2nd parameter       |
@@ -477,7 +481,7 @@ eax = func1(int a, int b, int c, int d, int e)
 ```
 Where: 
 
-| Register   | Description         |
+| Register / Stack Position  | Description         |
 | ---------- | ------------------- |
 | `rcx`      | Syscall number      |
 | `rdx`      | 1st parameter       |
@@ -500,7 +504,7 @@ This section describes the standard processes and conventions that one function 
 - Return
   - A scalar return value that can fit into 64 bits is returned through RAX
 
-See: [x64 calling convention](https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=vs-2019)
+See: [x64 calling convention](https://docs.microsoft.com/en-us/cpp/build/x64-calling-convention?view=vs-2019){:target="_blank"}
 
 ### ASM 64 bits tricks
 ```assembly
@@ -520,6 +524,6 @@ _start:
 ## Also see
 {: .-one-column}
 
-* [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html) _(software.intel.com)_
-* [Free Training Shellcoding for 64 bits - Brazilian Language](https://www.youtube.com/watch?v=ySKEF8MHcZA) _(YouTube)_
+* [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html){:target="_blank"} _(software.intel.com)_
+* [Free Training Shellcoding for 64 bits - Brazilian Language](https://www.youtube.com/watch?v=ySKEF8MHcZA){:target="_blank"} _(YouTube)_
 
