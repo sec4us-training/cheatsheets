@@ -62,7 +62,11 @@
   }
 
   & thead {
-    display: none;
+    border-bottom: solid 1px rgba(85,102,119,0.18);
+  }
+
+  & thead tr {
+    border: none;
   }
 
   & thead th {
