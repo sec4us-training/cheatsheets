@@ -287,9 +287,9 @@ _start:
 This sample can be used to generate: Windows PE
 ```assembly
 [BITS 32]
-global WinMain
+global _WinMain@16
 section .text
-WinMain:
+_WinMain@16:
     ; instructions
     nop
     nop
@@ -310,9 +310,9 @@ _start:
 This sample can be used to generate: Windows PE
 ```assembly
 [BITS 64]
-global WinMain
+global _WinMain@16
 section .text
-WinMain:
+_WinMain@16:
     ; instructions
     nop
     nop
@@ -482,12 +482,12 @@ Where:
 
 | Register / Stack Position  | Description         |
 | ---------- | ------------------- |
-| `rcx`      | Syscall number      |
-| `rdx`      | 1st parameter       |
-| `r8`       | 2nd parameter       |
-| `r9`       | 3rd parameter       |
-| `esp + 0x00`      | 4th parameter       |
-| `esp + 0x04`      | 5th parameter       |
+| `rcx`      | 1st parameter     |
+| `rdx`      | 2nd parameter       |
+| `r8`       | 3rd parameter       |
+| `r9`       | 4th parameter       |
+| `esp + 0x00`      | 5th parameter       |
+| `esp + 0x04`      | 6th parameter       |
 | ...               | Other parameter     |
 
 
