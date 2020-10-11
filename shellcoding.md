@@ -482,7 +482,7 @@ eax = func1(ESP, ESP + 0x04, ESP + 0x08, ...)
 | ...               | Other parameter     |
 
 ### Windows and Linux 64 bits
-When using syscall the parameters must be passed using registers. Return value, when exists, will be stored at `RAX`.
+When using ABI API the parameters must be passed using registers. Return value, when exists, will be stored at `RAX`.
 
 Follows pseudo-function:
 ```jsx
