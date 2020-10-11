@@ -417,11 +417,6 @@ objdump -D -Mintel,i386 -b binary -m i386 shellcode.bin
 objdump -D -Mintel,x86-64 -b binary -m i386 shellcode.bin
 ```
 
-# objdump -D -Mintel,i386 -b binary -m i386 foo.bin # for 32-bit code
-# objdump -D -Mintel,x86-64 -b binary -m i386 foo.bin # for 64-bit code
-
-
-
 Calling convention
 --------------------
 {: .-two-column}
