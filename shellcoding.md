@@ -88,8 +88,8 @@ Hard-coded parameter
 
 Parameter from an external command
 ```bash
-(gdb) run <(echo -n “AAAA”)
-(gdb) run <(python -c 'print "A" * 500 ')
+(gdb) run $(echo -n “AAAA”)
+(gdb) run $(python -c 'print "A" * 500 ')
 ```
 
 Passing data to stdin from external command
@@ -405,6 +405,22 @@ Use debug symbol insed of GDB
 ```bash
 (gdb) symbol-file symbols.debug
 ```
+
+### Disassemble raw file (shellcoding)
+32 bits
+```bash
+objdump -D -Mintel,i386 -b binary -m i386 shellcode.bin
+```
+
+64 bits
+```bash
+objdump -D -Mintel,x86-64 -b binary -m i386 shellcode.bin
+```
+
+# objdump -D -Mintel,i386 -b binary -m i386 foo.bin # for 32-bit code
+# objdump -D -Mintel,x86-64 -b binary -m i386 foo.bin # for 64-bit code
+
+
 
 Calling convention
 --------------------
