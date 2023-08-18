@@ -39,6 +39,10 @@ jobs:
             echo "BASE_URL=$baseurl" >> $GITHUB_ENV
           fi
 
+      - name: Yarn build
+        run: |
+          yarn build
+
       - name: Build Site
         env:
           JEKYLL_ENV: production
