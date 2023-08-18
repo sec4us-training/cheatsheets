@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang='en' class='no-js '>
+<head>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href='./assets/favicon.png' rel='shortcut icon'>
+<meta content='/INSTALL.html' name='app:pageurl'>
+
+
+  <title>Cheatsheet cheatsheet</title>
+  <meta content='Cheatsheet cheatsheet' property='og:title'>
+  <meta content='Cheatsheet cheatsheet' property='twitter:title'>
+  <meta content='article' property='og:type'>
+
+
+
+
+
+  <meta content="The one-page guide to Cheatsheet: usage, examples, links, snippets, and more." name="description">
+  <meta content="The one-page guide to Cheatsheet: usage, examples, links, snippets, and more." property="og:description">
+  <meta content="The one-page guide to Cheatsheet: usage, examples, links, snippets, and more." property="twitter:description">
+
+
+<link rel="canonical" href="https://cheatsheet.sec4us.com.br/INSTALL">
+<meta name="og:url" content="https://cheatsheet.sec4us.com.br/INSTALL">
+
+
+
+
+
+  <meta content='Sec4US cheatsheets' property='og:site_name'>
+
+
+
+
+
+
+
+
+
+  <meta content='Others' property='article:section'>
+
+
+
+
+
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-166030797-1'></script>
+<script>
+
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)};
+gtag('js',new Date());
+gtag('config','UA-166030797-1');
+</script>
+
+
+
+  <meta property='page:depth' content='1'>
+
+
+<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+<script>(function(H){H.className=H.className.replace(/\bNoJs\b/,'WithJs')})(document.documentElement)</script>
+
+  <script>(function(d,s){if(window.Promise&&[].includes&&Object.assign&&window.Map)return;var js,sc=d.getElementsByTagName(s)[0];js=d.createElement(s);js.src='https://cdn.polyfill.io/v2/polyfill.min.js';sc.parentNode.insertBefore(js, sc);}(document,'script'))</script>
+
+<!--[if lt IE 9]><script src='https://cdnjs.cloudflare.com/ajax/libs/nwmatcher/1.2.5/nwmatcher.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.js'></script><script src='https://cdn.rawgit.com/gisu/selectivizr/1.0.3/selectivizr.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'></script><![endif]-->
+
+  <style>html{opacity:0}</style>
+  <link rel="stylesheet" href="./assets/2015/style.css?t=20230818033042">
+  <link href="./assets/style.css?t=20230818033042" rel="stylesheet" />
+  <link href="./assets/print.css?t=20230818033042" rel="stylesheet" media="print" />
+</head>
+<body>
+<div class='all'>
+
+<div class='site-header'>
+  <div class='container'>
+    This is <a href="."><em>Sec4US cheatsheets</em></a> &mdash; a collection of cheatsheets I've written.
+  </div>
+</div>
+
+
+
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://google.com/article"
+  },
+  "headline": "Cheatsheet cheatsheet",
+  "image": [ null ],
+  "description": "The one-page guide to Cheatsheet: usage, examples, links, snippets, and more."
+}
+</script>
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://cheatsheet.sec4us.com.br/#others",
+      "name": "Others"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://cheatsheet.sec4us.com.br/INSTALL",
+      "name": "Cheatsheet"
+    }
+  }]
+}
+</script>
+
+
+<div class='post-list -single -cheatsheet'>
+  <div class='post-item'>
+    <div class='post-headline -cheatsheet'>
+      <p class='prelude'><span></span></p>
+      <h1><span>Cheatsheet</span></h1>
+
+      <div class='pubbox'>
+        <div class='HeadlinePub' role='complementary'>
+  <script async src='' id="_carbonads_js"></script>
+  <span class='placeholder -one'></span>
+  <span class='placeholder -two'></span>
+  <span class='placeholder -three'></span>
+  <span class='placeholder -four'></span>
+</div>
+
+      </div>
+    </div>
+
+    <div class='post-content -cheatsheet'>
+      <h1 id="cheatsheet">Cheatsheet</h1>
+
+<p>Demonstro aqui como compilar e gerar os HTMLs estáticos dos Cheat Sheets.</p>
+
+<h2 id="instale-as-dependências">Instale as dependências</h2>
+<pre><code># echo deb http://nginx.org/packages/mainline/ubuntu/ `lsb_release --codename --short` nginx &gt; /etc/apt/sources.list.d/nginx.list
+# curl -s http://nginx.org/keys/nginx_signing.key | apt-key add -
+# echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+# apt-get update &amp;&amp; apt-get -y upgrade
+# apt install nginx ruby-full build-essential zlib1g-dev yarn
+# gem install jekyll bundler jekyll-theme-primer
+</code></pre>
+
+<h2 id="configure-o-ambiente-do-usuário">Configure o ambiente do usuário</h2>
+<pre><code># clone git clone https://github.com/sec4us-training/cheatsheets.git
+# cd cheatsheets
+# yarn install
+# bundle install
+# bundle update i18n
+</code></pre>
+
+<h2 id="gere-os-arquivos-html">Gere os arquivos HTML</h2>
+<pre><code>Execute o comando abaixo para gerar todo o conteúdo do site
+Este processo atualizará o /assets/packed/ e _includes/2017/critical/ com as fontes em _parcel/
+
+yarn build
+</code></pre>
+
+<h2 id="gere-os-arquivos-html-de-produção">Gere os arquivos HTML de produção</h2>
+<pre><code>JEKYLL_ENV=production bundle exec jekyll build
+</code></pre>
+
+<h2 id="copie-os-arquivos-para-o-local-de-publicação-do-site">Copie os arquivos para o local de publicação do site</h2>
+<p>Supondo que o site está hospedado em /var/www/cheatsheets/</p>
+<pre><code>rsync -av cheatsheets/_site/* /var/www/cheatsheets/
+</code></pre>
+
+<h2 id="edite-o-arquivo-do-nginx-etcnginxnginxconf-conforme-abaixo">Edite o arquivo do NGINX (/etc/nginx/nginx.conf) conforme abaixo</h2>
+<pre><code>user  nginx;
+worker_processes  1;
+ 
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+ 
+ 
+events {
+    worker_connections  1024;
+}
+ 
+ 
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+ 
+    limit_conn_zone $binary_remote_addr zone=addr:10m;
+    server_names_hash_bucket_size  256;
+ 
+    client_max_body_size 10m;
+ 
+    log_format log_standard '$remote_addr, $http_x_forwarded_for - $remote_user [$time_local] "$request_method $scheme://$host$request_uri $server_protocol" $status $body_bytes_sent "$http_referer" "$http_user_agent" to: $upstream_addr';
+ 
+    access_log /var/log/nginx/access.log log_standard;
+    error_log /var/log/nginx/error.log;
+ 
+    sendfile        on;
+    #tcp_nopush     on;
+ 
+    keepalive_timeout  65;
+ 
+    #gzip  on;
+ 
+    include /etc/nginx/conf.d/*.conf;
+}
+</code></pre>
+
+<h2 id="edite-o-arquivo-do-host-nginx-etcnginxconfddefaultconf-conforme-abaixo">Edite o arquivo do host NGINX (/etc/nginx/conf.d/default.conf) conforme abaixo</h2>
+<pre><code>server {
+    listen      80;
+    server_name _;
+ 
+   location / {
+        root /var/www/cheatsheets/;
+
+        if (!-f "${request_filename}index.html") {
+            rewrite ^/(.*)/$ /$1 permanent;
+        }
+
+        if ($request_uri ~* "/index.html") {
+            rewrite (?i)^(.*)index\.html$ $1 permanent;
+        }   
+
+        if ($request_uri ~* ".html") {
+            rewrite (?i)^(.*)/(.*)\.html $1/$2 permanent;
+        }
+
+        try_files $uri.html $uri $uri/ /index.html;
+   }
+ 
+}
+</code></pre>
+
+<h2 id="recarregue-a-config-do-nginx">Recarregue a config do NGINX</h2>
+<pre><code># nginx -s reload
+</code></pre>
+
+<h2 id="agradecimentos">Agradecimentos</h2>
+<p>Agradeço ao <a href="https://ricostacruz.com/">@rstacruz</a> criador do site <a href="https://devhints.io/">devhints.io</a> pelo trabalho e apoio neste processo de criação do site.</p>
+
+<h2 id="fontes-de-estudo">Fontes de estudo</h2>
+<p>https://gist.github.com/rickharrison/6410194
+https://www.digitalocean.com/community/tutorials/how-to-get-started-with-jekyll-on-an-ubuntu-vps
+https://yuan3y.com/2017/09/make-jekyll-serve-a-systemd-service/
+https://github.com/rstacruz/cheatsheets/blob/master/CONTRIBUTING.md</p>
+
+    </div>
+
+    
+<ul class="social-list ">
+  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://cheatsheet.sec4us.com.br/INSTALL.html" target="share"><span class="text"></span></a></li>
+  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=Sec4US%20cheatsheets%20for%20Cheatsheet.%20https://cheatsheet.sec4us.com.br/INSTALL.html" target="share"><span class="text"></span></a></li>
+  
+</ul>
+
+  </div>
+</div>
+
+  <div class="about-the-site">
+  <div class="container">
+    <p class='blurb'>
+
+    
+    <p class='back'>
+      <a class='big-button -back -slim' href='.#toc'></a>
+    </p>
+    
+
+    <p>
+    </p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+
+
+
+
+<script src="https://cdn.rawgit.com/rstacruz/unorphan/v1.0.1/index.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script>unorphan('h1, h2, h3, p, li, .unorphan')</script>
+
+</body>
+</html>
+
