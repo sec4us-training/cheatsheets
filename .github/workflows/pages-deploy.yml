@@ -34,7 +34,7 @@ jobs:
 
       - name: Check baseurl
         run: |
-          baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
+          baseurl="$(grep '^url:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
           if [[ -n $baseurl ]]; then
             echo "BASE_URL=$baseurl" >> $GITHUB_ENV
           fi
