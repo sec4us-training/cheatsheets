@@ -41,6 +41,9 @@ jobs:
 
       - name: Yarn build
         run: |
+          yarn install
+          bundle install
+          bundle update i18n
           yarn build
 
       - name: Build Site
