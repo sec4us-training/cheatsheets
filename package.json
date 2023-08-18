@@ -1,8 +1,8 @@
 {
   "name": "cheatsheets",
-  "description": "Devhints.io",
+  "description": "Sec4US",
   "version": "1.0.0",
-  "author": "Rico Sta. Cruz <rstacruz@users.noreply.github.com>",
+  "author": "Helvio Junior (M4v3r1ck)",
   "dependencies": {
     "autoprefixer": "^9.8.2",
     "dom101": "^2.2.1",
@@ -37,7 +37,7 @@
   "license": "MIT",
   "main": "index.js",
   "private": true,
-  "repository": "https://github.com/rstacruz/cheatsheets.git",
+  "repository": "https://github.com/sec4us-training/cheatsheets.git",
   "scripts": {
     "build": "run-s -s 'parcel:*:build' jekyll:build",
     "dev": "run-p -sl jekyll:watch 'parcel:*:watch'",
